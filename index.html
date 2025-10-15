@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -23,250 +22,93 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Added Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 
 <style>
 
-/* Enhanced Global Styles */
-body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #f8f9fa;
-  color: #333;
-}
+/*======================================
+//--//-->   ABOUT
+======================================*/
 
-h1, h2, h3 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  color: #1a2b49;
-}
-
-/* Prevent unexpected content */
-body::before, body::after {
-  content: none !important;
-}
-
-/* Hero Section Enhancements */
-.hero {
-  background: linear-gradient(to right, #007bff, #ffbd39);
-  min-height: 100vh;
-  display: flex;
-  align-items center;
-}
-
-.hero .text h1 {
-  font-size: 3.5rem;
-  color: #fff;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-}
-
-.hero .text span {
-  color: #ffbd39;
-}
-
-#typing-animation {
-  color: #fff;
-  font-size: 2rem;
-  border-right: 0.15em solid #fff;
-  animation: blink-caret 0.75s step-end infinite;
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #fff; }
-}
-
-/* About Section */
 .about-mf .box-shadow-full {
-  background: #fff;
-  border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
-.about-mf .box-shadow-full:hover {
-  transform: translateY(-10px);
+.about-mf .about-img {
+  margin-bottom: 2rem;
 }
 
-.about-img img {
-  border-radius: 50%;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+.about-mf .about-img img {
+  margin-left: 10px;
 }
 
-.progress {
-  background-color: #e9ecef;
-  border-radius: 10px;
-  overflow: hidden;
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
 }
 
-.progress-bar {
-  background: linear-gradient(to right, #007bff, #ffbd39);
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
 }
 
-/* Fixed About Info Text Color */
-.about-info {
-  color: #333;
-}
 
-.about-info .title-s {
-  color: #555;
-}
-
-/* Resume Section */
-.resume-wrap {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-  transition: all 0.3s ease;
-}
-
-.resume-wrap:hover {
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  transform: translateY(-5px);
-}
-
-.resume-wrap .date {
-  color: #ffbd39;
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
   font-weight: bold;
-}
-
-.resume-wrap h2 {
-  color: #1a2b49;
-}
-
-/* Projects Section */
-.blog-entry {
-  background: #fff;
-  border-radius: 10px;
+  color: rgb(255, 255, 255);
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
 }
 
-.blog-entry:hover {
-  transform: scale(1.05);
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
 }
 
-.block-20 {
-  height: 200px;
-  background-size: cover !important;
-  background-position: center !important;
-  transition: opacity 0.3s ease;
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
-.block-20:hover {
-  opacity: 0.8;
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
 }
 
-/* Counter Section */
-.counter-wrap .text strong {
-  font-size: 3rem;
-  color: #007bff;
-}
 
-.counter-wrap .text span {
-  color: #333;
-}
+/* project image zoom effect */
 
-/* Contact Section */
-.contact-info .box {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-  transition: all 0.3s ease;
-}
-
-.contact-info .box:hover {
-  background: #ffbd39;
-  color: #fff;
-}
-
-.contact-info .box:hover .icon {
-  color: #fff;
-}
-
-.contact-info .box p {
-  color: #333;
-}
-
-.contact-info .box h3 {
-  color: #1a2b49;
-}
-
-.icon {
-  font-size: 2rem;
-  color: #007bff;
-}
-
-/* Hire Me Section */
-.ftco-hireme h2, .ftco-hireme h4 {
-  color: #1a2b49;
-}
-
-/* Footer */
-.ftco-footer {
-  background: #343a40;
-  color: #fff;
-}
-
-.ftco-footer h1, .ftco-footer h2, .ftco-footer h3 {
-  color: #fff;
-}
-
-.ftco-footer p {
-  color: #fff;
-}
-
-.ftco-footer a {
-  color: #ffbd39;
-}
-
-/* Buttons */
-.btn-primary {
-  background: #007bff;
-  border: none;
-  border-radius: 50px;
-  padding: 10px 20px;
-  transition: background 0.3s ease;
-}
-
-.btn-primary:hover {
-  background: #ffbd39;
-  color: #fff;
-}
-
-/* Social Icons */
-.ftco-footer-social a {
-  color: #fff;
-  font-size: 1.5rem;
-  margin: 0 10px;
-  transition: color 0.3s ease;
-}
-
-.ftco-footer-social a:hover {
-  color: #ffbd39;
-}
-
-/* Zoom Effect */
 .zoom-effect {
-  transition: transform 0.5s ease;
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
 }
 
 .zoom-effect:hover {
   transform: scale(1.1);
 }
 
-/* Additional Animations */
-.ftco-animate {
-  opacity: 0;
-  transition: opacity 1s ease, transform 1s ease;
-}
-
-.ftco-animate.fadeInUp {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 </style>
 
@@ -275,7 +117,7 @@ body::before, body::after {
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
 	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand" href="index.html">Muhammad Sajjad</a>
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -294,46 +136,62 @@ body::before, body::after {
 	    </div>
 	  </nav>
 	  <section id="home-section" class="hero">
-		  <div class="home-slider owl-carousel">
-	       <div class="slider-item">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
 	      	<div class="overlay"></div>
 	         <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
 	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
 	          	 <div class="overlay"></div>
 	          	</div>
-		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
-		          		<span class="subheading" style="color: #fff;">Hello!</span>
-			            <h1 class="mb-4 mt-3" style="color: #fff;">I'm <span>Sajjad Haneef</span></h1>
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Sajjad haneef</span></h1>
 
-						<!-- Enhanced Typing Animation -->
-						<div id="typing-animation"></div>
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
 
 						<script>
-						const typingAnimationElement = document.getElementById('typing-animation');
-						const typingTexts = ['Data Analyst ', 'Excel expert','Power Bi Developer'];
 
-						function playTypingAnimation(text, index = 0) {
-						  if (index < text.length) {
-						    typingAnimationElement.textContent += text[index];
-						    setTimeout(() => playTypingAnimation(text, index + 1), 100);
-						  } else {
-						    setTimeout(() => {
-						      typingAnimationElement.textContent = '';
-						      playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						    }, 2000);
-						  }
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Data Analyst ',
+						'Student  '
+					
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
 						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
 						playTypingAnimation(typingTexts[0]);
+
 						</script>
 
-						<br><br>
+						<br>
+						<br>
 			            <h2>A Data Analyst</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
 			            <p> 
-							<a href="https://hsajjadhaneef.github.io/sajjadhaneef.github.io/" class="btn btn-white btn-outline-white py-3 px-4">My Works</a>
-              <a href="#contact-section" class="btn btn-primary py-3 px-4 ml-3">Hire Me</a>
-            </p>
+							<a href="https://hsajjadhaneef.github.io/sajjadhaneef.github.io/" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
 		            </div>
 		          </div>
 	        	</div>
@@ -348,21 +206,23 @@ body::before, body::after {
     	<div class="container">
 			<div class="row">
 				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
 					<div class="col-md-6 col-lg-5 d-flex">
 						<div class="img-about img d-flex align-items-stretch">
 							<div class="overlay">
 								<div class="row">
 									<div class="col-sm-6 col-md-5">
 									  <div class="about-img">
-										<img src="images/about-me.png" class="img-fluid rounded-circle b-shadow-a" alt="">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
 									  </div>
 									</div>
+									<!-- Details next to profile image -->
 									<div class="col-sm-6 col-md-7">
 									  <div class="about-info">
 										<p><span class="title-s">Name: </span> <span>Muhammad Sajjad</span></p>
 										<p><span class="title-s">Job Role: </span> <span>Data Analyst</span></p>
 										<p><span class="title-s">Experience: </span> <span>2 Years</span></p>
-										<p><span class="title-s">Address: </span> <span>Lahore,Pakistan</span></p>
+										<p><span class="title-s">Address: </span> <span>Lahore, Pakistan</span></p>
 									  </div>
 									</div>
 								  </div>
@@ -371,22 +231,27 @@ body::before, body::after {
 									<p class="title-s">Skills</p>
 									<span>SQL</span> <span class="pull-right">90%</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+										<div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
 									</div>
 									
 									<span>PYTHON</span> <span class="pull-right">80%</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
 									</div>
 									
 									<span>Data Visualization</span> <span class="pull-right">90%</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
 									</div>
 									
 									<span>Statistical Analysis</span> <span class="pull-right">70%</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									
 									</div>
 								</div>
 							</div>
@@ -401,16 +266,16 @@ body::before, body::after {
 								<h2 class="mb-4">About Me</h2>
 								
 								<p>Data Analyst with 2 years of experience transforming business data into actionable insights. Skilled in Power BI, Looker Studio, BigQuery, Excel, SQL, and Python, with a strong foundation in math and statistics. 
-									Experienced in creating interactive dashboards and reports across Gaming, Hospitality, Healthcare, HR, Sales, and Finance to drive data-informed decisions and business growth.</p>
+									Experienced in creating interactive dashboards and reports across Gaming, Hospitality, Healthcare, HR, Sales, and Finance to drive data-informed decisions and business growth..</p>
 								
 								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span class="title-s">Profile:</span> <span>Data Analytics</span></li>
-									<li class="d-flex"><span class="title-s">Domain:</span> <span>Sales, Hospitality, Finance & Supply Chain </span></li>
-									<li class="d-flex"><span class="title-s">Education:</span> <span>Bachelor of Economics</span></li>
-									<li class="d-flex"><span class="title-s">Language:</span> <span>English, Hindi</span></li>
-									<li class="d-flex"><span class="title-s">BI Tools:</span> <span>Microsoft Power BI </span></li>
-									<li class="d-flex"><span class="title-s">Other Skills:</span> <span>Excel, SQL, Python, Looker Studio, BigQuery</span></li>
-									<li class="d-flex"><span class="title-s">Interest:</span> <span>Cricket, Gym, Travelling</span></li>
+									<li class="d-flex"><span>Profile:</span> <span>Data  Analytics</span></li>
+									<li class="d-flex"><span>Domain:</span> <span> Sales, Hospitality, Finance &amp; Supply Chain </span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Economics</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI </span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span> Excel, SQL,Python,Looker Studio,Bigquery</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Cricket, Gym, Travelling</span></li>
 									
 								</ul>
 							</div>
@@ -442,48 +307,50 @@ body::before, body::after {
           	<h1 class="big big-2">Resume</h1>
             <h2 class="mb-4">Resume</h2>
             <p>Data Analyst with 2 years of experience transforming business data into actionable insights. Skilled in Power BI, Looker Studio, BigQuery, Excel, SQL, and Python, with a strong foundation in math and statistics. 
-				Experienced in creating interactive dashboards and reports across Gaming, Hospitality, Healthcare, HR, Sales, and Finance to drive data-informed decisions and business growth.</p>
-          </div>
+				Experienced in creating interactive dashboards and reports across Gaming, Hospitality, Healthcare, HR, Sales, and Finance to drive data-informed decisions and business growth
         </div>
 
 		<div class="row">
-		<h1 class="big-4">Experience</h1>
-		<div class="underline"></div>
-		</div>
-		<br>
+	<h1 class="big-4">Experience</h1>
+<div class="underline"></div>
+</div>
+<br>
 
-		<div class="row">
-		  <div class="col-md-6">
-			<div class="resume-wrap ftco-animate">
-			  <span class="date">Sep 2023 – Oct 2024</span>
-			  <h2>Associate Data Analyst | IPS</h2>
-			  <p class="mt-4">
-				<ul>
-				  <li>Performed in-depth data analysis using Excel, SQL, and Power BI to uncover key insights that informed strategic decisions.</li>
-				  <li>Analyzed large datasets with SQL, identifying critical trends that improved data-driven decision-making by 30%.</li>
-				  <li>Developed interactive dashboards for HR, supply chain, sales, and finance in Power BI, enhancing data visualization and stakeholder engagement.</li>
-				</ul>
-			  </p>
-			</div>
-		  </div>
+<div class="row">
+  <!-- Left Side -->
+  <div class="col-md-6">
+    <div class="resume-wrap ftco-animate">
+      <span class="date">Sep 2023 – Oct 2024</span>
+      <h2>Associate Data Analyst at IPS</h2>
+      <p class="mt-4">
+        <ul>
+          <li>Performed in-depth data analysis using Excel, SQL, and Power BI to uncover key insights that informed strategic decisions.</li>
+          <li>Analyzed large datasets with SQL, identifying critical trends that improved data-driven decision-making by 30%.</li>
+          <li>Developed interactive dashboards for HR, supply chain, sales, and finance in Power BI, enhancing data visualization and stakeholder engagement.</li>
+        </ul>
+      </p>
+    </div>
+  </div>
 
-		  <div class="col-md-6">
-			<div class="resume-wrap ftco-animate">
-			  <span class="date">Oct 2024 – Present</span>
-			  <h2>Product Analyst | Highbit Games</h2>
-			  <p class="mt-4">
-				<ul>
-				  <li>Analyzed gameplay data to track user behavior, game performance, and key KPIs (DAU, retention, ARPU, LTV).</li>
-				  <li>Monitored app crashes and performance issues to support faster debugging and enhance user experience.</li>
-				  <li>Optimized SQL queries in BigQuery, reducing monthly billing from $100 to $10.</li>
-				  <li>Built interactive dashboards in Looker Studio and Power BI for in-game metrics and monetization trends.</li>
-				  <li>Utilized Excel for data cleaning, ad-hoc reporting, and financial analysis to support product decisions.</li>
-				  <li>Collaborated with game designers and product teams to deliver actionable, data-driven improvements.</li>
-				</ul>
-			  </p>
-			</div>
-		  </div>
-		</div>
+  <!-- Right Side -->
+  <div class="col-md-6">
+    <div class="resume-wrap ftco-animate">
+      <span class="date">Oct 2024 – Present</span>
+      <h2>Product Analyst at Highbit Games</h2>
+      <p class="mt-4">
+        <ul>
+          <li>Analyzed gameplay data to track user behavior, game performance, and key KPIs (DAU, retention, ARPU, LTV).</li>
+          <li>Monitored app crashes and performance issues to support faster debugging and enhance user experience.</li>
+          <li>Optimized SQL queries in BigQuery, reducing monthly billing from $100 to $10.</li>
+          <li>Built interactive dashboards in Looker Studio and Power BI for in-game metrics and monetization trends.</li>
+          <li>Utilized Excel for data cleaning, ad-hoc reporting, and financial analysis to support product decisions.</li>
+          <li>Collaborated with game designers and product teams to deliver actionable, data-driven improvements.</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+</div>
+
 
 				
 							</ul>
@@ -507,7 +374,7 @@ body::before, body::after {
     				<div class="resume-wrap ftco-animate">
     					<span class="date">2020-2024</span>
     					<h2>Bachelor of Economics</h2>
-    					<span class="position">University Of Punjab</span>
+    					<span class="position">University Of Education</span>
     					<p class="mt-4">Grade: B.</p>
     				</div>
     			</div>
@@ -545,7 +412,7 @@ body::before, body::after {
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Projects</h1>
             <h2 class="mb-4">Projects</h2>
-            <p>Below are the sample Data Analytics projects on Excel, Power BI, SQL, Python.</p>
+            <p>Below are the sample Data Analytics projects on Excel,Power BI,SQL,Python.</p>
           </div>
         </div>
         <div class="row d-flex">
@@ -556,7 +423,7 @@ body::before, body::after {
               <div class="text mt-3 float-right d-block">
 
                 <h3 class="heading"><a href="https://github.com/hsajjadhaneef/Food-Beverage-Industry/blob/main/codex%20sql%20(1).pdf">Food and Beverage Data analysis using SQL</a></h3>
-                <p>Analyzed Food and Beverage industry data for Marketing strategies.</p>
+                <p>Analyzed Food and Beverage industry data for Marketing strategies .</p>
               </div>
             </div>
           </div>
@@ -568,7 +435,7 @@ body::before, body::after {
 
                 <h3 class="heading"><a href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7185512366971731968/">Data Analysis using Excel</a></h3>
 				
-                <p>Performed ETL pizzas, Data Modelling with Power Pivot and Pivot Tables for Reports.</p>
+                <p>Performed ETL,Data Modelling with Power Pivot and Pivot Tables for Reports.</p>
               </div>
             </div>
           </div>
@@ -593,49 +460,42 @@ body::before, body::after {
 	  </div>
     </section>
 
-	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter" style="background-image: url(images/bg_1.jpg);">
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
       <div class="container">
-		<div class="row d-md-flex align-items-center justify-content-center">
-          <div class="col-md-4 d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18 text-center">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
               <div class="text">
                 <strong class="number" data-number="10">0</strong>
                 <span>Achievements</span>
               </div>
             </div>
           </div>
-          <div class="col-md-4 d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18 text-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
               <div class="text">
                 <strong class="number" data-number="12">0</strong>
                 <span>Projects</span>
               </div>
             </div>
           </div>
-          <div class="col-md-4 d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18 text-center">
-              <div class="text">
-                <strong class="number" data-number="2">0</strong>
-                <span>Years Experience</span>
-              </div>
-            </div>
-          </div>
+         
          
         </div>
       </div>
 	
 	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-			<div class="container">
+			<!-- <div class="container"> -->
 				<div class="row justify-content-center">
 					<div class="col-md-7 ftco-animate text-center">
-						<h2>More projects on <span> Github  </span> </h2>
+						<h2>More projects on<span> Github  </span> </h2>
 						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
 						<br>
 						<p><a href="https://github.com/hsajjadhaneef" class="btn btn-primary py-3 px-5">GitHub</a></p>
 						</div>
 					</div>
 				</div>
-			</div>
+			<!-- </div> -->
 		</div>
 	</section>
 
@@ -687,7 +547,8 @@ body::before, body::after {
   <h3 class="mb-4">Download Resume</h3>
   <p>
     <a href="https://drive.google.com/uc?export=download&id=1XLqclcJkZU9TVclCpv1x22N8X2Fw8HHE"
-       class="btn btn-primary py-3 px-5">
+       class="btn btn-primary py-4 px-5"
+       download="Product_Analyst.pdf">
       Download CV
     </a>
   </p>
@@ -705,7 +566,6 @@ body::before, body::after {
 					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/sajjad-haneef-8555101b3/"><span class="icon-linkedin"></span></a></li>  
 					 
 					  <li class="ftco-animate"><a href="https://www.facebook.com/H.sajjadhaneef"><span class="icon-facebook"></span></a></li>
-					  <li class="ftco-animate"><a href="https://github.com/hsajjadhaneef"><span class="icon-github"></span></a></li>
 				     
 					</ul>
 				<br>
@@ -721,8 +581,9 @@ body::before, body::after {
 		  <div class="row">
 			<div class="col-md-12 text-center">
   
-			  <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-	</p>
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 			</div>
 		  </div>
 		</div>
@@ -750,3 +611,4 @@ body::before, body::after {
     
   </body>
 </html>
+can you make this more attractive?
