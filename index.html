@@ -63,7 +63,7 @@ h1, h2, h3 {
 
 .hero .text h1 {
   font-size: 3.5rem;
-  color: #fff;
+  color: #fff; /* Kept white as it contrasts with gradient background */
   text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
@@ -72,7 +72,7 @@ h1, h2, h3 {
 }
 
 #typing-animation {
-  color: #fff;
+  color: #fff; /* Kept white as it contrasts with gradient background */
   font-size: 2rem;
   border-right: 0.15em solid #fff;
   animation: blink-caret 0.75s step-end infinite;
@@ -108,6 +108,15 @@ h1, h2, h3 {
 
 .progress-bar {
   background: linear-gradient(to right, #007bff, #ffbd39);
+}
+
+/* Fixed About Info Text Color */
+.about-info {
+  color: #333; /* Changed from white to dark gray for visibility on white background */
+}
+
+.about-info .title-s {
+  color: #555; /* Slightly lighter shade for titles */
 }
 
 /* Resume Section */
@@ -159,6 +168,10 @@ h1, h2, h3 {
   color: #007bff;
 }
 
+.counter-wrap .text span {
+  color: #333; /* Changed to dark gray for visibility */
+}
+
 /* Contact Section */
 .contact-info .box {
   background: #fff;
@@ -176,6 +189,14 @@ h1, h2, h3 {
   color: #fff;
 }
 
+.contact-info .box p {
+  color: #333; /* Changed to dark gray for visibility */
+}
+
+.contact-info .box h3 {
+  color: #555; /* Changed to a visible shade */
+}
+
 .icon {
   font-size: 2rem;
   color: #007bff;
@@ -184,7 +205,15 @@ h1, h2, h3 {
 /* Footer */
 .ftco-footer {
   background: #343a40;
-  color: #fff;
+  color: #fff; /* Kept white as it contrasts with dark background */
+}
+
+.ftco-footer p {
+  color: #fff; /* Ensured footer text is visible */
+}
+
+.ftco-footer a {
+  color: #ffbd39; /* Changed link color for visibility */
 }
 
 /* Buttons */
@@ -269,8 +298,8 @@ h1, h2, h3 {
 	          	</div>
 		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
-		          		<span class="subheading text-white">Hello!</span>
-			            <h1 class="mb-4 mt-3 text-white">I'm <span>Sajjad Haneef</span></h1>
+		          		<span class="subheading" style="color: #fff;">Hello!</span> <!-- Kept white for contrast -->
+			            <h1 class="mb-4 mt-3" style="color: #fff;">I'm <span>Sajjad Haneef</span></h1> <!-- Kept white for contrast -->
 
 						<!-- Enhanced Typing Animation -->
 						<div id="typing-animation"></div>
@@ -294,7 +323,7 @@ h1, h2, h3 {
 						</script>
 
 						<br><br>
-			            <h2 class="text-white">A Data Analyst</h2>
+			            <h2 class="text-white">A Data Analyst</h2> <!-- Kept white for contrast -->
 			            <p> 
 							<a href="https://hsajjadhaneef.github.io/sajjadhaneef.github.io/" class="btn btn-white btn-outline-white py-3 px-4">My Works</a>
               <a href="#contact-section" class="btn btn-primary py-3 px-4 ml-3">Hire Me</a>
@@ -449,7 +478,6 @@ h1, h2, h3 {
     </div>
   </div>
 </div>
-
 
 				
 							</ul>
