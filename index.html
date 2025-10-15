@@ -38,6 +38,7 @@ body {
 h1, h2, h3 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
+  color: #333; /* Default color for all headings, changed from any potential white */
 }
 
 .navbar-brand {
@@ -112,11 +113,11 @@ h1, h2, h3 {
 
 /* Fixed About Info Text Color */
 .about-info {
-  color: #333; /* Changed from white to dark gray for visibility on white background */
+  color: #333;
 }
 
 .about-info .title-s {
-  color: #555; /* Slightly lighter shade for titles */
+  color: #555;
 }
 
 /* Resume Section */
@@ -169,7 +170,7 @@ h1, h2, h3 {
 }
 
 .counter-wrap .text span {
-  color: #333; /* Changed to dark gray for visibility */
+  color: #333;
 }
 
 /* Contact Section */
@@ -190,11 +191,11 @@ h1, h2, h3 {
 }
 
 .contact-info .box p {
-  color: #333; /* Changed to dark gray for visibility */
+  color: #333;
 }
 
 .contact-info .box h3 {
-  color: #555; /* Changed to a visible shade */
+  color: #555;
 }
 
 .icon {
@@ -205,15 +206,19 @@ h1, h2, h3 {
 /* Footer */
 .ftco-footer {
   background: #343a40;
-  color: #fff; /* Kept white as it contrasts with dark background */
+  color: #fff;
+}
+
+.ftco-footer h1, .ftco-footer h2, .ftco-footer h3 { /* Ensure footer headings are white */
+  color: #fff;
 }
 
 .ftco-footer p {
-  color: #fff; /* Ensured footer text is visible */
+  color: #fff;
 }
 
 .ftco-footer a {
-  color: #ffbd39; /* Changed link color for visibility */
+  color: #ffbd39;
 }
 
 /* Buttons */
@@ -298,15 +303,15 @@ h1, h2, h3 {
 	          	</div>
 		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
-		          		<span class="subheading" style="color: #fff;">Hello!</span> <!-- Kept white for contrast -->
-			            <h1 class="mb-4 mt-3" style="color: #fff;">I'm <span>Sajjad Haneef</span></h1> <!-- Kept white for contrast -->
+		          		<span class="subheading" style="color: #fff;">Hello!</span>
+			            <h1 class="mb-4 mt-3" style="color: #fff;">I'm <span>Sajjad Haneef</span></h1>
 
 						<!-- Enhanced Typing Animation -->
 						<div id="typing-animation"></div>
 
 						<script>
 						const typingAnimationElement = document.getElementById('typing-animation');
-						const typingTexts = ['Data Analyst ', 'Excel Expert','Power BI Developer'];
+						const typingTexts = ['Data Analyst ','Excel Expert','Power bi Developer'];
 
 						function playTypingAnimation(text, index = 0) {
 						  if (index < text.length) {
@@ -323,7 +328,7 @@ h1, h2, h3 {
 						</script>
 
 						<br><br>
-			            <h2 class="text-white">A Data Analyst</h2> <!-- Kept white for contrast -->
+			            <h2>A Data Analyst</h2> <!-- Removed text-white class to use default #333 -->
 			            <p> 
 							<a href="https://hsajjadhaneef.github.io/sajjadhaneef.github.io/" class="btn btn-white btn-outline-white py-3 px-4">My Works</a>
               <a href="#contact-section" class="btn btn-primary py-3 px-4 ml-3">Hire Me</a>
@@ -441,43 +446,43 @@ h1, h2, h3 {
         </div>
 
 		<div class="row">
-	<h1 class="big-4">Experience</h1>
-<div class="underline"></div>
-</div>
-<br>
+		<h1 class="big-4">Experience</h1>
+		<div class="underline"></div>
+		</div>
+		<br>
 
-<div class="row">
-  <div class="col-md-6">
-    <div class="resume-wrap ftco-animate">
-      <span class="date">Sep 2023 – Oct 2024</span>
-      <h2>Associate Data Analyst | IPS</h2>
-      <p class="mt-4">
-        <ul>
-          <li>Performed in-depth data analysis using Excel, SQL, and Power BI to uncover key insights that informed strategic decisions.</li>
-          <li>Analyzed large datasets with SQL, identifying critical trends that improved data-driven decision-making by 30%.</li>
-          <li>Developed interactive dashboards for HR, supply chain, sales, and finance in Power BI, enhancing data visualization and stakeholder engagement.</li>
-        </ul>
-      </p>
-    </div>
-  </div>
+		<div class="row">
+		  <div class="col-md-6">
+			<div class="resume-wrap ftco-animate">
+			  <span class="date">Sep 2023 – Oct 2024</span>
+			  <h2>Associate Data Analyst | IPS</h2>
+			  <p class="mt-4">
+				<ul>
+				  <li>Performed in-depth data analysis using Excel, SQL, and Power BI to uncover key insights that informed strategic decisions.</li>
+				  <li>Analyzed large datasets with SQL, identifying critical trends that improved data-driven decision-making by 30%.</li>
+				  <li>Developed interactive dashboards for HR, supply chain, sales, and finance in Power BI, enhancing data visualization and stakeholder engagement.</li>
+				</ul>
+			  </p>
+			</div>
+		  </div>
 
-  <div class="col-md-6">
-    <div class="resume-wrap ftco-animate">
-      <span class="date">Oct 2024 – Present</span>
-      <h2>Product Analyst | Highbit Games</h2>
-      <p class="mt-4">
-        <ul>
-          <li>Analyzed gameplay data to track user behavior, game performance, and key KPIs (DAU, retention, ARPU, LTV).</li>
-          <li>Monitored app crashes and performance issues to support faster debugging and enhance user experience.</li>
-          <li>Optimized SQL queries in BigQuery, reducing monthly billing from $100 to $10.</li>
-          <li>Built interactive dashboards in Looker Studio and Power BI for in-game metrics and monetization trends.</li>
-          <li>Utilized Excel for data cleaning, ad-hoc reporting, and financial analysis to support product decisions.</li>
-          <li>Collaborated with game designers and product teams to deliver actionable, data-driven improvements.</li>
-        </ul>
-      </p>
-    </div>
-  </div>
-</div>
+		  <div class="col-md-6">
+			<div class="resume-wrap ftco-animate">
+			  <span class="date">Oct 2024 – Present</span>
+			  <h2>Product Analyst | Highbit Games</h2>
+			  <p class="mt-4">
+				<ul>
+				  <li>Analyzed gameplay data to track user behavior, game performance, and key KPIs (DAU, retention, ARPU, LTV).</li>
+				  <li>Monitored app crashes and performance issues to support faster debugging and enhance user experience.</li>
+				  <li>Optimized SQL queries in BigQuery, reducing monthly billing from $100 to $10.</li>
+				  <li>Built interactive dashboards in Looker Studio and Power BI for in-game metrics and monetization trends.</li>
+				  <li>Utilized Excel for data cleaning, ad-hoc reporting, and financial analysis to support product decisions.</li>
+				  <li>Collaborated with game designers and product teams to deliver actionable, data-driven improvements.</li>
+				</ul>
+			  </p>
+			</div>
+		  </div>
+		</div>
 
 				
 							</ul>
