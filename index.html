@@ -38,7 +38,12 @@ body {
 h1, h2, h3 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  color: #1a2b49; /* Changed to a deep blue for visibility and attractiveness */
+  color: #1a2b49;
+}
+
+/* Prevent unexpected content */
+body::before, body::after {
+  content: none !important;
 }
 
 /* Hero Section Enhancements */
@@ -46,12 +51,12 @@ h1, h2, h3 {
   background: linear-gradient(to right, #007bff, #ffbd39);
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items center;
 }
 
 .hero .text h1 {
   font-size: 3.5rem;
-  color: #fff; /* Kept white as it contrasts with gradient background */
+  color: #fff;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
@@ -60,7 +65,7 @@ h1, h2, h3 {
 }
 
 #typing-animation {
-  color: #fff; /* Kept white as it contrasts with gradient background */
+  color: #fff;
   font-size: 2rem;
   border-right: 0.15em solid #fff;
   animation: blink-caret 0.75s step-end infinite;
@@ -127,7 +132,7 @@ h1, h2, h3 {
 }
 
 .resume-wrap h2 {
-  color: #1a2b49; /* Ensure job titles are visible and attractive */
+  color: #1a2b49;
 }
 
 /* Projects Section */
@@ -186,7 +191,7 @@ h1, h2, h3 {
 }
 
 .contact-info .box h3 {
-  color: #1a2b49; /* Changed to deep blue for visibility and attractiveness */
+  color: #1a2b49;
 }
 
 .icon {
@@ -196,7 +201,7 @@ h1, h2, h3 {
 
 /* Hire Me Section */
 .ftco-hireme h2, .ftco-hireme h4 {
-  color: #1a2b49; /* Changed to deep blue for visibility and attractiveness */
+  color: #1a2b49;
 }
 
 /* Footer */
@@ -206,7 +211,7 @@ h1, h2, h3 {
 }
 
 .ftco-footer h1, .ftco-footer h2, .ftco-footer h3 {
-  color: #fff; /* Kept white as it contrasts with dark background */
+  color: #fff;
 }
 
 .ftco-footer p {
@@ -307,7 +312,7 @@ h1, h2, h3 {
 
 						<script>
 						const typingAnimationElement = document.getElementById('typing-animation');
-						const typingTexts = ['Data Analyst ', 'Excel Expert','Power BI Developer'];
+						const typingTexts = ['Data Analyst ', 'Excel expert','Power Bi Developer'];
 
 						function playTypingAnimation(text, index = 0) {
 						  if (index < text.length) {
@@ -357,7 +362,7 @@ h1, h2, h3 {
 										<p><span class="title-s">Name: </span> <span>Muhammad Sajjad</span></p>
 										<p><span class="title-s">Job Role: </span> <span>Data Analyst</span></p>
 										<p><span class="title-s">Experience: </span> <span>2 Years</span></p>
-										<p><span class="title-s">Address: </span> <span>Lahore, Pakistan</span></p>
+										<p><span class="title-s">Address: </span> <span>Lahore,Pakistan</span></p>
 									  </div>
 									</div>
 								  </div>
@@ -502,7 +507,7 @@ h1, h2, h3 {
     				<div class="resume-wrap ftco-animate">
     					<span class="date">2020-2024</span>
     					<h2>Bachelor of Economics</h2>
-    					<span class="position">University Of Education</span>
+    					<span class="position">University Of Punjab</span>
     					<p class="mt-4">Grade: B.</p>
     				</div>
     			</div>
