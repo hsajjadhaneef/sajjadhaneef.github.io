@@ -1,403 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Muhammad Sajjad | Data Analyst Portfolio</title>
+    <title>Sajjad Portfolio</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
       rel="stylesheet"
     />
-
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-
-    <!-- Font Awesome Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <style>
+      /* ===== General Enhancements ===== */
       body {
+        background-color: #f8fafc;
         font-family: "Poppins", sans-serif;
-        background-color: #f7f9fb;
-        color: #333;
-        line-height: 1.7;
+        color: #1e293b;
       }
 
-      /* Navbar */
-      .navbar {
-        background-color: #0a192f !important;
+      a {
+        color: #3b82f6;
+        transition: all 0.3s ease;
+      }
+      a:hover {
+        color: #6366f1;
+        text-decoration: none;
       }
 
-      .navbar-brand,
-      .nav-link {
-        color: #fff !important;
+      /* ===== Navbar ===== */
+      .ftco_navbar {
+        background: linear-gradient(90deg, #3b82f6, #6366f1);
+        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+      }
+      .navbar-brand {
+        font-weight: 700;
+        font-size: 22px;
+        letter-spacing: 1px;
+      }
+      .nav-link span {
+        color: #ffffff !important;
         font-weight: 500;
       }
-
-      .nav-link:hover {
-        color: #64ffda !important;
+      .nav-link:hover span {
+        color: #ffdd57 !important;
       }
 
-      /* Hero Section */
-      #home-section {
-        background: linear-gradient(to right, #001f3f, #003366);
+      /* ===== Hero Section ===== */
+      .hero {
+        background: linear-gradient(120deg, #3b82f6 0%, #6366f1 100%);
         color: white;
-        padding: 120px 0;
-        text-align: center;
+      }
+      .subheading {
+        font-size: 22px;
+        font-weight: 400;
+        color: #ffdd57;
+      }
+      .hero h1 span {
+        color: #ffdd57;
+      }
+      .btn-white {
+        background: white;
+        color: #3b82f6;
+        border-radius: 50px;
+        font-weight: 600;
+        transition: 0.3s;
+      }
+      .btn-white:hover {
+        background: #6366f1;
+        color: #fff;
       }
 
-      #home-section h1 {
-        font-size: 50px;
-        font-weight: 700;
-      }
-
-      #home-section span {
-        color: #64ffda;
-      }
-
+      /* ===== Typing Animation ===== */
       #typing-animation {
         font-size: 28px;
-        color: #64ffda;
-        display: inline-block;
-        border-right: 3px solid #64ffda;
+        font-weight: bold;
+        color: #ffffff;
+        border-right: 3px solid #ffdd57;
         white-space: nowrap;
         overflow: hidden;
-        animation: typing 4s steps(20, end) infinite;
+        animation: typing 3s steps(20, end) infinite alternate;
       }
-
       @keyframes typing {
-        0% {
+        from {
           width: 0;
         }
-        50% {
+        to {
           width: 100%;
         }
-        100% {
-          width: 0;
-        }
       }
 
-      /* Section Titles */
-      h2.section-title {
-        font-weight: 700;
-        text-align: center;
-        margin-bottom: 40px;
-        color: #0a192f;
-        position: relative;
-      }
-
-      h2.section-title::after {
-        content: "";
-        width: 80px;
-        height: 3px;
-        background: #64ffda;
-        position: absolute;
-        bottom: -10px;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-
-      /* About Section */
-      #about-section {
+      /* ===== About Section ===== */
+      .ftco-about {
         background: #ffffff;
-        padding: 80px 0;
+        border-radius: 16px;
+        box-shadow: 0px 8px 25px rgba(99, 102, 241, 0.1);
       }
-
       .about-info p span.title-s {
+        color: #3b82f6;
         font-weight: 600;
-        color: #0a192f;
       }
-
-      /* Skills */
-      .progress {
-        height: 10px;
-        background-color: #d8e6f3;
-      }
-
       .progress-bar {
-        background-color: #64ffda;
+        background: linear-gradient(90deg, #3b82f6, #6366f1);
       }
 
-      /* Resume Section */
-      #resume-section {
-        background: #f0f4f8;
-        padding: 80px 0;
-      }
-
-      .resume-wrap {
-        background: #fff;
-        border-radius: 10px;
-        padding: 25px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-        transition: transform 0.3s ease;
-      }
-
-      .resume-wrap:hover {
-        transform: translateY(-5px);
-      }
-
-      .resume-wrap h2 {
-        color: #0a192f;
-      }
-
-      /* Projects */
-      #project-section {
-        background: #ffffff;
-        padding: 80px 0;
-      }
-
-      .project-card {
-        background: #fff;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease;
-      }
-
-      .project-card:hover {
-        transform: scale(1.03);
-      }
-
-      .project-card img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-      }
-
-      .project-card .content {
-        padding: 20px;
-      }
-
-      .project-card a {
-        color: #0a192f;
-        font-weight: 600;
-      }
-
-      .project-card a:hover {
-        color: #64ffda;
-      }
-
-      /* Contact Section */
-      #contact-section {
-        background: #0a192f;
-        color: white;
-        padding: 80px 0;
-      }
-
-      #contact-section a {
-        color: #64ffda;
-      }
-
-      /* Footer */
-      footer {
-        background-color: #0a192f;
-        color: #fff;
-        text-align: center;
-        padding: 25px 0;
-        font-size: 15px;
-      }
-
-      footer a {
-        color: #64ffda;
-      }
-
+      /* ===== Buttons ===== */
       .btn-primary {
-        background-color: #64ffda;
+        background: linear-gradient(90deg, #3b82f6, #6366f1);
         border: none;
-        color: #0a192f;
+        border-radius: 50px;
+        transition: all 0.3s;
+      }
+      .btn-primary:hover {
+        background: linear-gradient(90deg, #6366f1, #3b82f6);
+        transform: scale(1.05);
+      }
+
+      /* ===== Projects ===== */
+      .block-20 {
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 6px 18px rgba(99, 102, 241, 0.2);
+      }
+      .block-20:hover {
+        transform: scale(1.05);
+      }
+      .text.mt-3 h3 a {
+        color: #1e293b;
         font-weight: 600;
       }
 
-      .btn-primary:hover {
-        background-color: #52e3c2;
+      /* ===== Contact Section ===== */
+      .contact-section {
+        background: linear-gradient(120deg, #6366f1, #3b82f6);
+        color: white;
+      }
+      .contact-section h2 {
+        color: #ffdd57;
+      }
+      .contact-info .box {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        transition: all 0.3s ease;
+      }
+      .contact-info .box:hover {
+        background: rgba(255, 255, 255, 0.25);
+        transform: scale(1.05);
+      }
+
+      /* ===== Footer ===== */
+      footer {
+        background-color: #1e293b;
+        color: #cbd5e1;
+      }
+      footer a {
+        color: #ffdd57;
+      }
+      footer a:hover {
+        color: #ffffff;
+      }
+
+      /* ===== Zoom Effect ===== */
+      .zoom-effect {
+        overflow: hidden;
+        transition: transform 0.4s ease-in-out;
+      }
+      .zoom-effect:hover {
+        transform: scale(1.1);
+      }
+
+      /* ===== Section Titles ===== */
+      h1.big,
+      h1.big-2 {
+        color: #3b82f6;
+        text-shadow: 2px 2px #e0e7ff;
+      }
+      h2.mb-4 {
+        color: #1e293b;
       }
     </style>
   </head>
 
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Muhammad Sajjad</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"><i class="fas fa-bars text-white"></i></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a href="#home-section" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#about-section" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#resume-section" class="nav-link">Resume</a></li>
-            <li class="nav-item"><a href="#project-section" class="nav-link">Projects</a></li>
-            <li class="nav-item"><a href="#contact-section" class="nav-link">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Hero -->
-    <section id="home-section">
-      <div class="container">
-        <h1>Hi, I'm <span>Muhammad Sajjad</span></h1>
-        <h3 id="typing-animation"></h3>
-        <p class="mt-3">A Data Analyst passionate about turning data into insights.</p>
-        <a href="#project-section" class="btn btn-primary mt-3">View My Work</a>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section id="about-section">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="row align-items-center">
-          <div class="col-md-5">
-            <img
-              src="images/about-me.png"
-              alt="Muhammad Sajjad"
-              class="img-fluid rounded shadow"
-            />
-          </div>
-          <div class="col-md-7">
-            <p>
-              I’m a Data Analyst with 2 years of experience transforming business
-              data into actionable insights. Skilled in Power BI, Looker Studio,
-              BigQuery, Excel, SQL, and Python, with a strong foundation in math
-              and statistics.
-            </p>
-            <div class="progress mt-3">
-              <div class="progress-bar" style="width: 90%"></div>
-            </div>
-            <p>SQL – 90%</p>
-            <div class="progress mt-2">
-              <div class="progress-bar" style="width: 80%"></div>
-            </div>
-            <p>Python – 80%</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Resume -->
-    <section id="resume-section">
-      <div class="container">
-        <h2 class="section-title">Experience</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="resume-wrap mb-4">
-              <h5>Sep 2023 – Oct 2024</h5>
-              <h2>Associate Data Analyst | IPS</h2>
-              <ul>
-                <li>Performed data analysis using Excel, SQL, and Power BI.</li>
-                <li>Built dashboards for HR, Supply Chain, and Finance.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="resume-wrap mb-4">
-              <h5>Oct 2024 – Present</h5>
-              <h2>Product Analyst | Highbit Games</h2>
-              <ul>
-                <li>Analyzed gameplay data and key performance metrics.</li>
-                <li>Optimized SQL queries in BigQuery reducing costs by 90%.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="text-center mt-5">
-          <a
-            href="https://drive.google.com/uc?export=download&id=1XLqclcJkZU9TVclCpv1x22N8X2Fw8HHE"
-            class="btn btn-primary py-3 px-5"
-            download
-            >Download CV</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="project-section">
-      <div class="container">
-        <h2 class="section-title">Projects</h2>
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <div class="project-card">
-              <img src="images/proj_1.jpg" alt="Project 1" />
-              <div class="content">
-                <a href="#">Food & Beverage SQL Analysis</a>
-                <p>Analyzed datasets for marketing optimization.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="project-card">
-              <img src="images/proj_2.jpg" alt="Excel Project" />
-              <div class="content">
-                <a href="#">Excel Data Modeling</a>
-                <p>Created Power Pivot models for business insights.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="project-card">
-              <img src="images/proj_3.png" alt="Power BI Project" />
-              <div class="content">
-                <a href="#">Power BI Hospitality Dashboard</a>
-                <p>Designed a Power BI dashboard for AtliQ Grands’ revenue team.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact-section">
-      <div class="container">
-        <h2 class="section-title text-white">Contact Me</h2>
-        <p class="text-center mb-5">
-          Let's connect — I’d love to collaborate on your next data project!
-        </p>
-        <div class="text-center">
-          <p><i class="fas fa-map-marker-alt"></i> Lahore, Pakistan</p>
-          <p><i class="fas fa-envelope"></i> sd0900786@gmail.com</p>
-          <p><i class="fas fa-phone"></i> +92 322 4683278</p>
-          <div class="mt-3">
-            <a
-              href="https://linkedin.com/in/sajjad-haneef-8555101b3"
-              class="btn btn-primary mr-2"
-              >LinkedIn</a
-            >
-            <a href="https://github.com/hsajjadhaneef" class="btn btn-primary"
-              >GitHub</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <p>
-        © <script>document.write(new Date().getFullYear());</script> Muhammad Sajjad |
-        Designed with 💚 using HTML & CSS
-      </p>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <!-- keep your body content exactly same -->
+    <!-- ✅ Paste your full existing body content (from <nav> to </footer>) here -->
+    <!-- The design and layout will remain same with new color scheme -->
   </body>
 </html>
