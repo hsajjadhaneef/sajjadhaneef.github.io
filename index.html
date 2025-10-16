@@ -1,92 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Title is updated to Akshay's information -->
-    <title>Portfolio - Akshay Girhe | Data Analyst</title>
+    <title>Sajjad Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Links to standard libraries to mimic the template look -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    
-    <!-- External CSS files from Sajjad's template are commented out as they are unavailable -->
-    <!-- <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css"> -->
-    <!-- <link rel="stylesheet" href="css/animate.css"> -->
-    <!-- <link rel="stylesheet" href="css/owl.carousel.min.css"> -->
-    <!-- <link rel="stylesheet" href="css/owl.theme.default.min.css"> -->
-    <!-- <link rel="stylesheet" href="css/magnific-popup.css"> -->
-    <!-- <link rel="stylesheet" href="css/aos.css"> -->
-    <!-- <link rel="stylesheet" href="css/ionicons.min.css"> -->
-    <!-- <link rel="stylesheet" href="css/flaticon.css"> -->
-    <!-- <link rel="stylesheet" href="css/icomoon.css"> -->
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-    
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
-        /* Essential styles copied from the Sajjad template's inline style block */
-        .about-mf .box-shadow-full { padding-top: 4rem; padding-bottom: 4rem; }
-        .about-mf .about-img { margin-bottom: 2rem; }
-        .about-mf .about-img img { margin-left: 10px; width: 100%; max-width: 200px; height: auto; }
-        .skill-mf .progress { margin: .5rem 0 1.2rem 0; border-radius: 0; height: .7rem; }
-        .skill-mf .progress .progress-bar { height: .7rem; background-color: #ffbd39; }
-        #typing-animation { position: relative; font-size: 30px; font-weight: bold; color: rgb(255, 255, 255); overflow: hidden; white-space: nowrap; }
-        .zoom-effect { overflow: hidden; transition: transform 0.3s ease-out; background-size: cover; background-position: center; height: 250px; }
-        .zoom-effect:hover { transform: scale(1.1); }
-        /* Basic structural styles needed for the layout to function */
-        body { font-family: 'Poppins', sans-serif; }
-        .hero { background: #333; height: 100vh; display: flex; align-items: center; color: white; }
-        .overlay { background: rgba(0, 0, 0, 0.5); position: absolute; top: 0; bottom: 0; left: 0; right: 0; }
-        .ftco-navbar { background: #222 !important; }
-        .ftco-section { padding: 7em 0; }
-        .heading-section h1 { font-size: 80px; color: #f9f9f9; }
-        .heading-section h2 { font-size: 40px; color: #000; }
-        .big-4 { font-size: 50px; color: #ccc; }
-        .underline { width: 50px; height: 3px; background: #ffbd39; margin-bottom: 20px; }
-        .resume-wrap { padding: 30px; border: 1px solid #ccc; margin-bottom: 20px; }
-        .resume-wrap h2 { font-size: 20px; color: #ffbd39; }
-        .resume-wrap span { display: block; }
-        .counter-wrap .number { font-size: 50px; color: #ffbd39; }
-        .ftco-footer-social a { color: #fff; background: #ffbd39; margin-right: 10px; padding: 10px; border-radius: 50%; }
-        .ftco-footer { background: #222; color: #fff; padding: 3em 0;}
-        .ftco-hireme { background-size: cover; background-position: center; height: 400px; display: flex; align-items: center; }
-        .ftco-hireme h2 { color: #fff; font-size: 50px; }
-        .ftco-hireme h4 { color: #fff; }
-        .btn-primary { background: #ffbd39 !important; border-color: #ffbd39 !important; color: #000 !important; }
-        .ftco-animate { opacity: 1; }
-        .container { width: 90%; margin: 0 auto; }
-        .row { display: flex; flex-wrap: wrap; margin: 0 -15px; }
-        .col-md-4, .col-md-6, .col-md-7, .col-md-10, .col-lg-3, .col-lg-5, .col-lg-7 { padding: 0 15px; }
-        .text-center { text-align: center; }
-        .d-flex { display: flex; }
-        .align-items-center { align-items: center; }
-        .justify-content-center { justify-content: center; }
-        .mt-3 { margin-top: 1rem; }
-        .mt-4 { margin-top: 1.5rem; }
-        .mb-4 { margin-bottom: 1.5rem; }
-        .py-3 { padding-top: 1rem; padding-bottom: 1rem; }
-        .px-4 { padding-left: 1.5rem; padding-right: 1.5rem; }
-        .py-4 { padding-top: 1.5rem; padding-bottom: 1.5rem; }
-        .px-5 { padding-left: 3rem; padding-right: 3rem; }
-        .p-4 { padding: 1.5rem; }
-        .rounded { border-radius: 0.25rem; }
-        .b-shadow-a { box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        .nav-link { color: #fff; }
-        .nav-link:hover { color: #ffbd39; }
-        .navbar-brand { color: #fff !important; }
-        .contact-info .box { border: 1px solid #ccc; }
-
-        /* Custom animation (required to be in the template's style block) */
-        @keyframes typing { from { width: 0; } to { width: 100%; } }
-        @keyframes typing-cursor { from { width: 5px; } to { width: 0; } }
-        #typing-animation { animation: typing 3s steps(20, end) infinite; }
-        #typing-animation:before { content: ""; position: absolute; top: 0; left: 0; width: 0; height: 100%; background-color: #ccc; animation: typing-cursor 0.5s ease-in-out infinite; }
+        /*====================================== //--//--> ABOUT ======================================*/
+        .about-mf .box-shadow-full {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+        .about-mf .about-img {
+            margin-bottom: 2rem;
+        }
+        .about-mf .about-img img {
+            margin-left: 10px;
+        }
+        .skill-mf .progress {
+            margin: .5rem 0 1.2rem 0;
+            border-radius: 0;
+            height: .7rem;
+        }
+        .skill-mf .progress .progress-bar {
+            height: .7rem;
+            background-color: #ffbd39;
+        }
+        /* Animation styles */
+        #typing-animation {
+            position: relative;
+            font-size: 30px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 3s steps(20, end) infinite;
+        }
+        #typing-animation:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: #ccc;
+            animation: typing-cursor 0.5s ease-in-out infinite;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        @keyframes typing-cursor {
+            from { width: 5px; }
+            to { width: 0; }
+        }
+        /* project image zoom effect */
+        .zoom-effect {
+            overflow: hidden;
+            transition: transform 0.3s ease-out;
+        }
+        .zoom-effect:hover {
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
         <div class="container">
-            <!-- Content from Akshay's data -->
-            <a class="navbar-brand" href="#home-section">Akshay Girhe</a>
+            <a class="navbar-brand" href="index.html">Muhammad Sajjad</a>
             <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
             </button>
@@ -94,7 +85,7 @@
                 <ul class="navbar-nav nav ml-auto">
                     <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
                     <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-                    <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Certificates</span></a></li>
+                    <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
                     <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
                     <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
                 </ul>
@@ -113,14 +104,14 @@
                         <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
                             <div class="text">
                                 <span class="subheading">Hello!</span>
-                                <h1 class="mb-4 mt-3">I'm <span>Akshay Girhe</span></h1>
-                                <!-- Element to contain animated typing - uses Akshay's suggested roles -->
+                                <h1 class="mb-4 mt-3">I'm <span>Sajjad Haneef</span></h1>
+                                <!-- Element to contain animated typing -->
                                 <span id="typing-animation"></span>
                                 <script>
                                     // Initialize the typing animation
                                     const typingAnimationElement = document.getElementById('typing-animation');
-                                    // Create an array of typing text from Akshay's profile
-                                    const typingTexts = ['Data Analyst', 'Excel Expert', 'Power BI Developer', 'Data Detective'];
+                                    // Create an array of typing text
+                                    const typingTexts = ['Data Analyst ', 'Excel Expert', 'Power BI Developer'];
                                     // Create a function to display the typing animation for a given text
                                     function playTypingAnimation(text) {
                                         typingAnimationElement.textContent = '';
@@ -138,15 +129,12 @@
                                         }, 200); // Typing speed
                                     }
                                     // Start the typing animation loop
-                                    // Note: This relies on jQuery and other scripts in the Sajjad template's environment
-                                    // For a standalone HTML output, the visual effect may be limited.
-                                    setTimeout(() => { playTypingAnimation(typingTexts[0]); }, 500);
+                                    playTypingAnimation(typingTexts[0]);
                                 </script>
                                 <br><br>
                                 <h2>A Data Analyst</h2>
                                 <p>
-                                    <!-- Resume link from Akshay's data -->
-                                    <a href="https://files.codebasics.io/uploads/learner-portfolio/resumes/134585/6756949d416f2/17c9dacf76.pdf" class="btn btn-white btn-outline-white py-3 px-4" target="_blank">Download Resume</a>
+                                    <a href="https://hsajjadhaneef.github.io/sajjadhaneef.github.io/" class="btn btn-white btn-outline-white py-3 px-4">My Works</a>
                                 </p>
                             </div>
                         </div>
@@ -165,31 +153,37 @@
                                 <div class="row">
                                     <div class="col-sm-6 col-md-5">
                                         <div class="about-img">
-                                            <!-- Profile image from Akshay's data -->
-                                            <img src="https://images.codebasics.io/filters:format(webp)/fit-in/600x600/uploads/learner-portfolio/profile-images/134585/64f96a9b2c557/cc2e07cbb4.jpg" class="img-fluid rounded b-shadow-a" alt="Akshay Girhe">
+                                            <img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
                                         </div>
                                     </div>
-                                    <!-- Details next to profile image - from Akshay's data -->
+                                    <!-- Details next to profile image -->
                                     <div class="col-sm-6 col-md-7">
                                         <div class="about-info">
-                                            <p><span class="title-s">Name: </span> <span>Akshay Girhe</span></p>
+                                            <p><span class="title-s">Name: </span> <span>Muhammad Sajjad</span></p>
                                             <p><span class="title-s">Job Role: </span> <span>Data Analyst</span></p>
-                                            <p><span class="title-s">Experience: </span> <span>~3.9 Years</span></p>
-                                            <p><span class="title-s">Contact: </span> <span>+91 9403076979</span></p>
+                                            <p><span class="title-s">Experience: </span> <span>2 Years</span></p>
+                                            <p><span class="title-s">Address: </span> <span>Lahore, Pakistan</span></p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="skill-mf">
-                                    <p class="title-s">Key Skills</p>
-                                    <!-- Skills from Akshay's data -->
-                                    <span>TABLEAU</span> <span class="pull-right">95%</span>
-                                    <div class="progress"><div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div></div>
-                                    <span>PYTHON</span> <span class="pull-right">85%</span>
-                                    <div class="progress"><div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div></div>
-                                    <span>EFFECTIVE COMMUNICATION</span> <span class="pull-right">90%</span>
-                                    <div class="progress"><div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
-                                    <span>DEEP ANALYSIS & ADAPTABILITY</span> <span class="pull-right">90%</span>
-                                    <div class="progress"><div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                    <p class="title-s">Skills</p>
+                                    <span>SQL</span> <span class="pull-right">90%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span>PYTHON</span> <span class="pull-right">80%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span>Data Visualization</span> <span class="pull-right">90%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span>Statistical Analysis</span> <span class="pull-right">70%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -199,28 +193,26 @@
                             <div class="col-md-12 heading-section ftco-animate">
                                 <h1 class="big">About</h1>
                                 <h2 class="mb-4">About Me</h2>
-                                <!-- About Me text from Akshay's data -->
-                                <p>👋 About Me: Your Data Detective 🕵️‍♂️. Hey there! I'm on a mission to make data your best friend. I may have started with a degree in Electrical Engineering, but guess what? I stumbled upon my true love—data analysis!</p>
-                                <p>With nearly 3.9 years of real-world experience under my belt, I've become a pro at using Excel, PowerBI, SQL, Python, and Tableau to turn boring numbers into exciting insights. I'm all about finding the hidden stories in data.</p>
-                                <p>I've worked with all sorts of data during my career, from sales figures to customer behavior, and I've helped companies make smarter decisions. Let's team up to unravel the mysteries of data together. Every dataset is like a puzzle, and I'm here to help you solve it. 📈🔍</p>
+                                <p>Data Analyst with 2 years of experience transforming business data into actionable insights. Skilled in Power BI, Looker Studio, BigQuery, Excel, SQL, and Python, with a strong foundation in math and statistics. Experienced in creating interactive dashboards and reports across Gaming, Hospitality, Healthcare, HR, Sales, and Finance to drive data-informed decisions and business growth.</p>
                                 <ul class="about-info mt-4 px-md-0 px-2">
                                     <li class="d-flex"><span>Profile:</span> <span>Data Analytics</span></li>
-                                    <li class="d-flex"><span>Domain:</span> <span>Sales, Supply Chain, Hospitality, Health</span></li>
-                                    <li class="d-flex"><span>Education:</span> <span>Electrical Engineering (Initial Degree)</span></li>
-                                    <li class="d-flex"><span>Core Tools:</span> <span>Excel, PowerBI, SQL, Python, Tableau</span></li>
+                                    <li class="d-flex"><span>Domain:</span> <span>Sales, Hospitality, Finance &amp; Supply Chain</span></li>
+                                    <li class="d-flex"><span>Education:</span> <span>Bachelor of Economics</span></li>
+                                    <li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+                                    <li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI</span></li>
+                                    <li class="d-flex"><span>Other Skills:</span> <span>Excel, SQL, Python, Looker Studio, BigQuery</span></li>
+                                    <li class="d-flex"><span>Interest:</span> <span>Cricket, Gym, Travelling</span></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="counter-wrap ftco-animate d-flex mt-md-3">
                             <div class="text">
                                 <p class="mb-4">
-                                    <!-- Project Count from Akshay's data -->
-                                    <span class="number" data-number="6">0</span>
+                                    <span class="number" data-number="12">0</span>
                                     <span>+</span>
                                     <span>&nbsp; Projects completed</span>
                                 </p>
-                                <!-- LinkedIn link from Akshay's data -->
-                                <p><a href="https://www.linkedin.com/in/akshay-girhe-a19698247?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3ByfaBWYbyRMiblzMwmjGTxQ%3D%3D" class="btn btn-primary py-3 px-3" target="_blank">LinkedIn</a></p>
+                                <p><a href="https://www.linkedin.com/in/sajjad-haneef-8555101b3/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
                             </div>
                         </div>
                     </div>
@@ -232,47 +224,77 @@
         <div class="container">
             <div class="row justify-content-center pb-5">
                 <div class="col-md-10 heading-section text-center ftco-animate">
-                    <h1 class="big big-2">Certificates</h1>
-                    <h2 class="mb-4">Awards & Certificates</h2>
-                    <p>Certifications acquired from various data analysis courses and programs.</p>
+                    <h1 class="big big-2">Resume</h1>
+                    <h2 class="mb-4">Resume</h2>
+                    <p>Data Analyst with 2 years of experience transforming business data into actionable insights. Skilled in Power BI, Looker Studio, BigQuery, Excel, SQL, and Python, with a strong foundation in math and statistics. Experienced in creating interactive dashboards and reports across Gaming, Hospitality, Healthcare, HR, Sales, and Finance to drive data-informed decisions and business growth.</p>
                 </div>
             </div>
             <div class="row">
-                <h1 class="big-4">Certificates</h1>
+                <h1 class="big-4">Experience</h1>
                 <div class="underline"></div>
             </div>
             <br>
             <div class="row">
-                <!-- Certificate 1 from Akshay's data -->
+                <!-- Left Side -->
                 <div class="col-md-6">
                     <div class="resume-wrap ftco-animate">
-                        <span class="date">Codebasics</span>
-                        <h2>Tableau Online Training V2</h2>
-                        <span class="position">Certificate in Data Visualization</span>
+                        <span class="date">Sep 2023 – Oct 2024</span>
+                        <h2>Associate Data Analyst at IPS</h2>
+                        <p class="mt-4">
+                            <ul>
+                                <li>Performed in-depth data analysis using Excel, SQL, and Power BI to uncover key insights that informed strategic decisions.</li>
+                                <li>Analyzed large datasets with SQL, identifying critical trends that improved data-driven decision-making by 30%.</li>
+                                <li>Developed interactive dashboards for HR, supply chain, sales, and finance in Power BI, enhancing data visualization and stakeholder engagement.</li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
-                <!-- Certificate 2 from Akshay's data -->
+                <!-- Right Side -->
                 <div class="col-md-6">
                     <div class="resume-wrap ftco-animate">
-                        <span class="date">Certifying Authority</span>
-                        <h2>AWS with Python and Boto 3</h2>
-                        <span class="position">Certificate in Cloud Data Skills</span>
+                        <span class="date">Oct 2024 – Present</span>
+                        <h2>Product Analyst at Highbit Games</h2>
+                        <p class="mt-4">
+                            <ul>
+                                <li>Analyzed gameplay data to track user behavior, game performance, and key KPIs (DAU, retention, ARPU, LTV).</li>
+                                <li>Monitored app crashes and performance issues to support faster debugging and enhance user experience.</li>
+                                <li>Optimized SQL queries in BigQuery, reducing monthly billing from $100 to $10.</li>
+                                <li>Built interactive dashboards in Looker Studio and Power BI for in-game metrics and monetization trends.</li>
+                                <li>Utilized Excel for data cleaning, ad-hoc reporting, and financial analysis to support product decisions.</li>
+                                <li>Collaborated with game designers and product teams to deliver actionable, data-driven improvements.</li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
-                <!-- Certificate 3 from Akshay's data -->
+            </div>
+            <br><br>
+            <div class="row">
+                <h1 class="big-4">Education</h1>
+                <div class="underline"></div>
+            </div>
+            <br>
+            <div class="row">
                 <div class="col-md-6">
                     <div class="resume-wrap ftco-animate">
-                        <span class="date">Certifying Authority</span>
-                        <h2>Excel Skills Virtual Experience Program</h2>
-                        <span class="position">Certificate in Advanced Excel Skills</span>
+                        <span class="date">2020-2024</span>
+                        <h2>Bachelor of Economics</h2>
+                        <span class="position">University Of Punjab</span>
+                        <p class="mt-4">Grade: B.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="resume-wrap ftco-animate">
+                        <span class="date">2017-2019</span>
+                        <h2>Higher Secondary School</h2>
+                        <span class="position">Punjab group of Colleges</span>
+                        <p class="mt-4">Grade: A.</p>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center mt-5">
                 <div class="col-md-6 text-center ftco-animate">
-                    <!-- Resume link from Akshay's data -->
                     <p>
-                        <a href="https://files.codebasics.io/uploads/learner-portfolio/resumes/134585/6756949d416f2/17c9dacf76.pdf" class="btn btn-primary py-4 px-5" download="Akshay_Girhe_Resume.pdf">Download CV</a>
+                        <a href="https://drive.google.com/uc?export=download&id=1XLqclcJkZU9TVclCpv1x22N8X2Fw8HHE" class="btn btn-primary py-4 px-5" download="Product_Analyst.pdf">Download CV</a>
                     </p>
                 </div>
             </div>
@@ -283,38 +305,35 @@
             <div class="row justify-content-center mb-5 pb-5">
                 <div class="col-md-7 heading-section text-center ftco-animate">
                     <h1 class="big big-2">Projects</h1>
-                    <h2 class="mb-4">My Projects</h2>
-                    <p>Data Analytics projects using Excel, Power BI, and SQL across various domains.</p>
+                    <h2 class="mb-4">Projects</h2>
+                    <p>Below are the sample Data Analytics projects on Excel, Power BI, SQL, Python.</p>
                 </div>
             </div>
             <div class="row d-flex">
-                <!-- Project 1: Annual Sales Report (Excel) -->
                 <div class="col-md-4 d-flex ftco-animate">
                     <div class="blog-entry justify-content-end">
-                        <a href="https://ambitious-akshaygirhe.wordpress.com/2023/09/07/sales-report-finance-report-for-atliq-hardware/" class="block-20 zoom-effect" style="background-image: url('https://images.codebasics.io/filters:format(webp)/fit-in/450x450/uploads/learner-portfolio/projects/thumbnail/134585/64f9a4ed9dc74/10c0568ac1.jpg');" target="_blank"></a>
+                        <a href="https://github.com/hsajjadhaneef/Food-Beverage-Industry/blob/main/codex%20sql%20(1).pdf" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');"></a>
                         <div class="text mt-3 float-right d-block">
-                            <h3 class="heading"><a href="https://ambitious-akshaygirhe.wordpress.com/2023/09/07/sales-report-finance-report-for-atliq-hardware/" target="_blank">Annual Sales Report (Excel)</a></h3>
-                            <p>Customer Performance & Market vs. Target reports for sales team using Excel and Power Query.</p>
+                            <h3 class="heading"><a href="https://github.com/hsajjadhaneef/Food-Beverage-Industry/blob/main/codex%20sql%20(1).pdf">Food and Beverage Data Analysis using SQL</a></h3>
+                            <p>Analyzed Food and Beverage industry data for Marketing strategies.</p>
                         </div>
                     </div>
                 </div>
-                <!-- Project 2: Business Insights 360 (Power BI) -->
                 <div class="col-md-4 d-flex ftco-animate">
                     <div class="blog-entry justify-content-end">
-                        <a href="https://app.powerbi.com/view?r=eyJrIjoiYTljNDk5OTgtNDIwNC00NmNmLWEzMDMtNWZmNTk4ODhkNzgzIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" class="block-20 zoom-effect" style="background-image: url('https://images.codebasics.io/filters:format(webp)/fit-in/450x450/uploads/learner-portfolio/projects/thumbnail/134585/64f9ac336061b/f284e94944.JPG');" target="_blank"></a>
+                        <a href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7185512366971731968/" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');"></a>
                         <div class="text mt-3 float-right d-block">
-                            <h3 class="heading"><a href="https://app.powerbi.com/view?r=eyJrIjoiYTljNDk5OTgtNDIwNC00NmNmLWEzMDMtNWZmNTk4ODhkNzgzIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" target="_blank">Business Insights 360 (Power BI)</a></h3>
-                            <p>Advanced Power BI dashboard solution for AtliQ Hardware's sales, marketing, finance, and executive teams.</p>
+                            <h3 class="heading"><a href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7185512366971731968/">Data Analysis using Excel</a></h3>
+                            <p>Performed ETL, Data Modelling with Power Pivot and Pivot Tables for Reports.</p>
                         </div>
                     </div>
                 </div>
-                <!-- Project 3: AtliQ Mart - Supply Chain analysis (Power BI) -->
                 <div class="col-md-4 d-flex ftco-animate">
                     <div class="blog-entry">
-                        <a href="https://app.powerbi.com/view?r=eyJrIjoiNWRhMWIwMGEtNzYxYS00MjBkLTg3YzEtYzAwNTAwMmQwMzU1IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" class="block-20 zoom-effect" style="background-image: url('https://images.codebasics.io/filters:format(webp)/fit-in/450x450/uploads/learner-portfolio/projects/thumbnail/134585/65129c78b64f9/d62e78c3a8.JPG');" target="_blank"></a>
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiMDlhY2I5ODAtNGQ5My00MDUwLTkzZTMtYjNmMzFjMTNhNmY5IiwidCI6IjI1YmM2ZDYyLTVmMWEtNDdmZC1hNWM0LTJjMTdlNWUxMmE3YiIsImMiOjl9" class="block-20 zoom-effect" style="background-image: url('images/proj_3.png');"></a>
                         <div class="text mt-3 float-right d-block">
-                            <h3 class="heading"><a href="https://app.powerbi.com/view?r=eyJrIjoiNWRhMWIwMGEtNzYxYS00MjBkLTg3YzEtYzAwNTAwMmQwMzU1IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" target="_blank">AtliQ Mart - Supply Chain analysis (Power BI)</a></h3>
-                            <p>Supply Chain Analytics tracking OT%, IF%, and OTIF% to solve customer service issues in the FMCG domain.</p>
+                            <h3 class="heading"><a href="https://github.com/hsajjadhaneef/AtliQ--Hospitality-">Power BI Hospitality Dashboard</a></h3>
+                            <p>Designed a Power BI dashboard for AtliQ Grands’ Revenue Team, providing valuable insights for data-driven decision-making.</p>
                         </div>
                     </div>
                 </div>
@@ -327,17 +346,15 @@
                 <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
                     <div class="block-18">
                         <div class="text">
-                            <!-- Certificate Count from Akshay's data -->
-                            <strong class="number" data-number="3">0</strong>
-                            <span>Certificates</span>
+                            <strong class="number" data-number="10">0</strong>
+                            <span>Achievements</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
                     <div class="block-18">
                         <div class="text">
-                            <!-- Project Count from Akshay's data -->
-                            <strong class="number" data-number="6">0</strong>
+                            <strong class="number" data-number="12">0</strong>
                             <span>Projects</span>
                         </div>
                     </div>
@@ -345,16 +362,15 @@
             </div>
         </div>
     </section>
-    <div class="ftco-section ftco-hireme img margin-top" style="background-image: url('https://files.codebasics.io/v3/images-webp/portfolio/portfolio_template_4_bg.webp');">
+    <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-7 ftco-animate text-center">
-                    <h2>Connect on <span>LinkedIn</span></h2>
+                    <h2>More projects on <span>GitHub</span></h2>
                     <div class="heading">
                         <h4>I love to solve business problems &amp; uncover hidden data stories</h4>
                         <br>
-                        <!-- LinkedIn link from Akshay's data -->
-                        <p><a href="https://www.linkedin.com/in/akshay-girhe-a19698247?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3ByfaBWYbyRMiblzMwmjGTxQ%3D%3D" class="btn btn-primary py-3 px-5" target="_blank">Visit LinkedIn</a></p>
+                        <p><a href="https://github.com/hsajjadhaneef" class="btn btn-primary py-3 px-5">GitHub</a></p>
                     </div>
                 </div>
             </div>
@@ -365,53 +381,46 @@
             <div class="row justify-content-center mb-5 pb-3">
                 <div class="col-md-7 heading-section text-center ftco-animate">
                     <h1 class="big big-2">Contact</h1>
-                    <h2 class="mb-4">Let's Connect</h2>
-                    <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+                    <h2 class="mb-4">Contact Me</h2>
+                    <p>Below are the details to reach out to me!</p>
                 </div>
             </div>
             <div class="row d-flex contact-info mb-5">
                 <div class="col-md-6 col-lg-3 d-flex ftco-animate">
                     <div class="align-self-stretch box p-4 text-center">
                         <div class="icon d-flex align-items-center justify-content-center">
-                            <!-- Icon for Address -->
-                            <span class="bi bi-geo-alt"></span>
+                            <span class="icon-map-signs"></span>
                         </div>
                         <h3 class="mb-4">Address</h3>
-                        <p>India (as per contact info)</p>
+                        <p>Lahore, Pakistan</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 d-flex ftco-animate">
                     <div class="align-self-stretch box p-4 text-center">
                         <div class="icon d-flex align-items-center justify-content-center">
-                            <!-- Icon for Phone -->
-                            <span class="oi oi-phone"></span>
+                            <span class="icon-phone2"></span>
                         </div>
                         <h3 class="mb-4">Contact Number</h3>
-                        <!-- Phone number from Akshay's data -->
-                        <p><a href="tel:+919403076979">+91 9403076979</a></p>
+                        <p><a href="tel://0101010101">+ 923224683278</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 d-flex ftco-animate">
                     <div class="align-self-stretch box p-4 text-center">
                         <div class="icon d-flex align-items-center justify-content-center">
-                            <!-- Icon for Email -->
-                            <span class="oi oi-envelope-open"></span>
+                            <span class="icon-paper-plane"></span>
                         </div>
                         <h3 class="mb-4">Email Address</h3>
-                        <!-- Email from Akshay's data -->
-                        <p><a href="mailto:girheakshay1993@gmail.com">girheakshay1993@gmail.com</a></p>
+                        <p><a href="mailto:info@yoursite.com">sd0900786@gmail.com</a></p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 d-flex ftco-animate">
                     <div class="align-self-stretch box p-4 text-center">
                         <div class="icon d-flex align-items-center justify-content-center">
-                            <!-- Icon for Download -->
-                            <span class="oi oi-data-transfer-download"></span>
+                            <span class="icon-globe"></span>
                         </div>
                         <h3 class="mb-4">Download Resume</h3>
-                        <!-- Resume link from Akshay's data -->
                         <p>
-                            <a href="https://files.codebasics.io/uploads/learner-portfolio/resumes/134585/6756949d416f2/17c9dacf76.pdf" class="btn btn-primary py-4 px-5" download="Akshay_Girhe_Resume.pdf">Download CV</a>
+                            <a href="https://drive.google.com/uc?export=download&id=1XLqclcJkZU9TVclCpv1x22N8X2Fw8HHE" class="btn btn-primary py-4 px-5" download="Product_Analyst.pdf">Download CV</a>
                         </p>
                     </div>
                 </div>
@@ -420,10 +429,8 @@
                 <br><br><br>
                 <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
                     <li class="ftco-animate normal-txt">Find me on</li>
-                    <!-- LinkedIn link from Akshay's data -->
-                    <li class="ftco-animate"><a href="https://www.linkedin.com/in/akshay-girhe-a19698247?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3ByfaBWYbyRMiblzMwmjGTxQ%3D%3D" target="_blank"><span class="bi bi-linkedin"></span></a></li>
-                    <!-- GitHub link (deduced from project links) -->
-                    <li class="ftco-animate"><a href="https://github.com/Akshaygirhe58" target="_blank"><span class="bi bi-github"></span></a></li>
+                    <li class="ftco-animate"><a href="https://www.linkedin.com/in/sajjad-haneef-8555101b3/"><span class="icon-linkedin"></span></a></li>
+                    <li class="ftco-animate"><a href="https://www.facebook.com/H.sajjadhaneef"><span class="icon-facebook"></span></a></li>
                 </ul>
                 <br>
             </div>
@@ -433,13 +440,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <p>
-                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Portfolio of Akshay Girhe
-                    </p>
+                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                 </div>
             </div>
         </div>
     </footer>
-    
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
