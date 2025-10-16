@@ -26,6 +26,11 @@
 
 <style>
 
+/* General body text color for better visibility on light backgrounds */
+body {
+    color: #333333; 
+}
+
 /*======================================
 //--//-->   ABOUT
 ======================================*/
@@ -41,8 +46,15 @@
 
 .about-mf .about-img img {
   margin-left: 10px;
+  /* Added max-width for better responsive control */
+  max-width: 95%; 
 }
 
+
+.skill-mf {
+    /* Added padding for better spacing above the skills list */
+    padding-top: 10px;
+}
 
 .skill-mf .progress {
   /* background-color: #cde1f8; */
@@ -57,20 +69,21 @@
 }
 
 
-/* Animation styles */
+/* Animation styles - Enhanced for visibility and attractiveness */
 #typing-animation {
   position: relative;
   font-size: 30px;
   font-weight: bold;
-  color: rgb(255, 255, 255);
+  color: #ffbd39; /* Changed to accent color for pop and visibility */
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 3s steps(20, end) infinite;
+  /* Removed conflicting animation CSS, JS will handle the effect */
 }
 
+/* Removed the problematic :before pseudo-element and its animation for better visibility */
+/*
 #typing-animation:before {
   content: "";
-  /* position: absolute; */
   top: 0;
   left: 0;
   width: 0;
@@ -78,28 +91,9 @@
   background-color: #ccc;
   animation: typing-cursor 0.5s ease-in-out infinite;
 }
+*/
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
-}
-
-
-/* project image zoom effect */
-
+/* Keeping the project zoom effect as it is attractive */
 .zoom-effect {
   overflow: hidden;
   transition: transform 0.3s ease-out;
@@ -108,7 +102,6 @@
 .zoom-effect:hover {
   transform: scale(1.1);
 }
-
 
 </style>
 
@@ -153,6 +146,7 @@
 						<span id="typing-animation"></span>
 
 						<script>
+						// Refined JavaScript for smoother and more visible typing animation
 
 						// Initialize the typing animation
 						const typingAnimationElement = document.getElementById('typing-animation');
@@ -163,21 +157,30 @@
 						'Excel Expert','Power BI Developer'
 					
 						];
+						
+						const typingSpeed = 100; // Time in ms per character (low is fast)
+						const pauseBetweenWords = 1500; // Time in ms to pause after a word is fully typed
 
 						// Create a function to display the typing animation for a given text
 						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
+							// Clear the text before starting to type the new one
+							typingAnimationElement.textContent = ''; 
 
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
+							// Loop through each character and add it to the element
+							for (let i = 0; i < text.length; i++) {
+								setTimeout(() => {
+								typingAnimationElement.textContent += text[i];
+								}, i * typingSpeed); 
+							}
+
+							// Once the animation is complete, reset the text and start over
+							const totalTypingTime = text.length * typingSpeed;
+							setTimeout(() => {
+								// Start the next animation after a slight delay
+								setTimeout(() => {
+									playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+								}, 100); 
+							}, totalTypingTime + pauseBetweenWords);
 						}
 
 						// Start the typing animation loop
@@ -611,4 +614,3 @@
     
   </body>
 </html>
-can you make this more attractive?
