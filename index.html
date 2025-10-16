@@ -117,7 +117,11 @@ body::before, body::after {
 }
 
 .about-info .title-s {
-  color: #555;
+  color: #007bff;
+}
+
+.counter-wrap .text span:first-child {
+  color: #007bff;
 }
 
 /* Resume Section */
@@ -427,7 +431,7 @@ body::before, body::after {
 						<div class="row justify-content-start pb-3">
 							<div class="col-md-12 heading-section ftco-animate">
 								
-								<h2 class="mb-4">About Me</h2> <!-- Removed large "About" text -->
+								<h2 class="mb-4">About Me</h2>
 								
 								<p>Data Analyst with 2 years of experience transforming business data into actionable insights. Skilled in Power BI, Looker Studio, BigQuery, Excel, SQL, and Python, with a strong foundation in math and statistics. 
 									Experienced in creating interactive dashboards and reports across Gaming, Hospitality, Healthcare, HR, Sales, and Finance to drive data-informed decisions and business growth.</p>
@@ -439,7 +443,7 @@ body::before, body::after {
 									<li class="d-flex"><span class="title-s">Language:</span> <span>English, Hindi</span></li>
 									<li class="d-flex"><span class="title-s">BI Tools:</span> <span>Microsoft Power BI</span></li>
 									<li class="d-flex"><span class="title-s">Other Skills:</span> <span>Excel, SQL, Python, Looker Studio, BigQuery</span></li>
-									<li class="d-flex"><span class="title-s">Interest:</span> <span>Cricket, Gym, Travelling</span></li> <!-- Bolded via CSS -->
+									<li class="d-flex"><span class="title-s">Interest:</span> <span>Cricket, Gym, Travelling</span></li>
 								</ul>
 							</div>
 						</div>
@@ -459,100 +463,164 @@ body::before, body::after {
 		</div>
     </section>
 
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-            <h2 class="mb-4">Resume</h2> <!-- Removed large "Resume" text -->
-            <p>Data Analyst with 2 years of experience transforming business data into actionable insights. Skilled in Power BI, Looker Studio, BigQuery, Excel, SQL, and Python, with a strong foundation in math and statistics. 
-				Experienced in creating interactive dashboards and reports across Gaming, Hospitality, Healthcare, HR, Sales, and Finance to drive data-informed decisions and business growth.</p>
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the sample Data Analytics projects on Excel, Power BI, SQL, Python.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/hsajjadhaneef/Food-Beverage-Industry/blob/main/codex%20sql%20(1).pdf" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="https://github.com/hsajjadhaneef/Food-Beverage-Industry/blob/main/codex%20sql%20(1).pdf">Food and Beverage Data Analysis using SQL</a></h3>
+                <p>Analyzed Food and Beverage industry data for Marketing strategies.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7185512366971731968/" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7185512366971731968/">Data Analysis using Excel</a></h3>
+                <p>Performed ETL pizzas, Data Modelling with Power Pivot and Pivot Tables for Reports.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://app.powerbi.com/view?r=eyJrIjoiMDlhY2I5ODAtNGQ5My00MDUwLTkzZTMtYjNmMzFjMTNhNmY5IiwidCI6IjI1YmM2ZDYyLTVmMWEtNDdmZC1hNWM0LTJjMTdlNWUxMmE3YiIsImMiOjl9"
+                 class="block-20 zoom-effect"
+                 style="background-image: url('images/proj_3.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="https://github.com/hsajjadhaneef/AtliQ--Hospitality-">Power BI Hospitality Dashboard</a></h3>
+                <p>Designed a Power BI dashboard for AtliQ Grands’ Revenue Team, providing valuable insights for data-driven decision-making.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="#">Sales Performance Analysis using Python</a></h3>
+                <p>Developed a Python script to analyze sales data, identifying trends and forecasting future performance.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="#">Healthcare Data Visualization with Power BI</a></h3>
+                <p>Created an interactive Power BI dashboard to visualize patient data and optimize healthcare operations.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_6.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="#">Supply Chain Optimization using SQL</a></h3>
+                <p>Analyzed supply chain data with SQL queries to improve efficiency and reduce costs.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_7.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="#">Financial Reporting with Excel</a></h3>
+                <p>Built comprehensive financial reports using Excel, including pivot tables and charts.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_8.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="#">Customer Segmentation using Python</a></h3>
+                <p>Implemented a Python-based clustering model to segment customers for targeted marketing.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_9.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="#">HR Analytics Dashboard with Looker Studio</a></h3>
+                <p>Designed a Looker Studio dashboard to track employee performance and retention metrics.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
           </div>
         </div>
 
-		<div class="row">
-		<h2 class="big-4">Experience</h2> <!-- Adjusted to standard h2 -->
-		<div class="underline"></div>
-		</div>
-		<br>
-
-		<div class="row">
-		  <div class="col-md-6">
-			<div class="resume-wrap ftco-animate">
-			  <span class="date">Sep 2023 – Oct 2024</span>
-			  <h2>Associate Data Analyst | IPS</h2>
-			  <p class="mt-4">
-				<ul>
-				  <li>Performed in-depth data analysis using Excel, SQL, and Power BI to uncover key insights that informed strategic decisions.</li>
-				  <li>Analyzed large datasets with SQL, identifying critical trends that improved data-driven decision-making by 30%.</li>
-				  <li>Developed interactive dashboards for HR, supply chain, sales, and finance in Power BI, enhancing data visualization and stakeholder engagement.</li>
-				</ul>
-			  </p>
-			</div>
-		  </div>
-
-		  <div class="col-md-6">
-			<div class="resume-wrap ftco-animate">
-			  <span class="date">Oct 2024 – Present</span>
-			  <h2>Product Analyst | Highbit Games</h2>
-			  <p class="mt-4">
-				<ul>
-				  <li>Analyzed gameplay data to track user behavior, game performance, and key KPIs (DAU, retention, ARPU, LTV).</li>
-				  <li>Monitored app crashes and performance issues to support faster debugging and enhance user experience.</li>
-				  <li>Optimized SQL queries in BigQuery, reducing monthly billing from $100 to $10.</li>
-				  <li>Built interactive dashboards in Looker Studio and Power BI for in-game metrics and monetization trends.</li>
-				  <li>Utilized Excel for data cleaning, ad-hoc reporting, and financial analysis to support product decisions.</li>
-				  <li>Collaborated with game designers and product teams to deliver actionable, data-driven improvements.</li>
-				</ul>
-			  </p>
-			</div>
-		  </div>
-		</div>
-
-		<br>
-		<br>
-
-		<div class="row">
-			<h2 class="big-4">Education</h2> <!-- Adjusted to standard h2 -->
-			<div class="underline"></div>
-		</div>
-		<br>
-	
-			<div class="row">
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2020-2024</span>
-    					<h2>Bachelor of Economics</h2>
-    					<span class="position">University Of Education</span>
-    					<p class="mt-4">Grade: B.</p>
-    				</div>
-    			</div>
-
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2017-2019</span>
-    					<h2>Higher Secondary School</h2>
-    					<span class="position">Punjab group of Colleges</span>
-    					<p class="mt-4">Grade: A.</p>
-    				</div>
-				</div>
-    		</div>
-
-    		<div class="row justify-content-center mt-5">
-    			<div class="col-md-6 text-center ftco-animate">
-    				<p>
-  <a href="https://drive.google.com/uc?export=download&id=1XLqclcJkZU9TVclCpv1x22N8X2Fw8HHE" 
-     class="btn btn-primary py-4 px-5" 
-     download="Product_Analyst.pdf">
-    Download CV
-  </a>
-</p>
-    			</div>
-    		</div>
-    	</div>
-    </section>
-
-    <!-- Rest of the sections (Projects, Contact, etc.) remain unchanged -->
-    <!-- ... (keeping the rest of the HTML as is for brevity) ... -->
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Lahore, Pakistan</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+ 923224683278</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">sd0900786@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+          		<p>
+          			<a href="https://drive.google.com/uc?export=download&id=1XLqclcJkZU9TVclCpv1x22N8X2Fw8HHE"
+          			 class="btn btn-primary py-3 px-5">
+          				Download CV
+          			</a>
+          		</p>
+          	</div>
+          </div>
+        </div>
+      </section>
 
     <footer class="ftco-footer ftco-section">
 		<div class="container">
@@ -560,7 +628,7 @@ body::before, body::after {
 			<div class="col-md-12 text-center">
   
 			  <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-	</p>
+			</p>
 			</div>
 		  </div>
 		</div>
