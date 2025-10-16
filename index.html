@@ -51,12 +51,12 @@ body::before, body::after {
   background: linear-gradient(to right, #007bff, #ffbd39);
   min-height: 100vh;
   display: flex;
-  align-items center;
+  align-items: center;
 }
 
 .hero .text h1 {
   font-size: 3.5rem;
-  color: #fff;
+  color: #1a2b49 !important; /* Changed from white for better visibility */
   text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
@@ -64,16 +64,24 @@ body::before, body::after {
   color: #ffbd39;
 }
 
+.hero .text .subheading {
+  color: #1a2b49 !important; /* Changed subheading for visibility */
+}
+
 #typing-animation {
-  color: #fff;
+  color: #1a2b49 !important; /* Changed from white */
   font-size: 2rem;
-  border-right: 0.15em solid #fff;
+  border-right: 0.15em solid #1a2b49;
   animation: blink-caret 0.75s step-end infinite;
 }
 
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: #fff; }
+  50% { border-color: #1a2b49; }
+}
+
+.hero .text h2 {
+  color: #1a2b49 !important; /* Changed for visibility */
 }
 
 /* About Section */
@@ -236,6 +244,18 @@ body::before, body::after {
   color: #fff;
 }
 
+.btn-white {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn-white:hover {
+  background: #ffbd39;
+  border-color: #ffbd39;
+  color: #1a2b49;
+}
+
 /* Social Icons */
 .ftco-footer-social a {
   color: #fff;
@@ -268,6 +288,11 @@ body::before, body::after {
   transform: translateY(0);
 }
 
+/* Ensure all headings use dark color globally where needed */
+.heading-section h1, .heading-section h2 {
+  color: #1a2b49 !important;
+}
+
 </style>
 
 
@@ -277,7 +302,7 @@ body::before, body::after {
 	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Muhammad Sajjad</a>
+	      <a class="navbar-brand" href="index.html" style="color: #fff;">Muhammad Sajjad</a>
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -299,13 +324,10 @@ body::before, body::after {
 	      	<div class="overlay"></div>
 	         <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
-	          	 <div class="overlay"></div>
-	          	</div>
 		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
-		          		<span class="subheading" style="color: #fff;">Hello!</span>
-			            <h1 class="mb-4 mt-3" style="color: #fff;">I'm <span>Sajjad Haneef</span></h1>
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Sajjad Haneef</span></h1>
 
 						<!-- Enhanced Typing Animation -->
 						<div id="typing-animation"></div>
